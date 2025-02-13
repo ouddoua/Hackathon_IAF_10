@@ -85,31 +85,28 @@ const Home = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center mx-auto">
             {[
               {
                 icon: <Users className="h-8 w-8 text-[#ed0f4e]" />,
                 title: 'Mentorat',
                 description:
                   'Programme de mentorat personnalisé pour accompagner les futures ingénieures',
+                link: 'https://www.ingenieuses.fr/actualites/',
               },
               {
                 icon: <BookOpen className="h-8 w-8 text-[#ed0f4e]" />,
                 title: 'Formations',
                 description:
                   'Ateliers et formations pour développer vos compétences techniques',
+                link: 'https://www.ingenieuses.fr/le-label-cap-ingenieuses/',
               },
               {
                 icon: <Calendar className="h-8 w-8 text-[#ed0f4e]" />,
                 title: 'Événements',
                 description:
                   'Conférences et networking pour élargir votre réseau professionnel',
-              },
-              {
-                icon: <Award className="h-8 w-8 text-[#ed0f4e]" />,
-                title: 'Bourses',
-                description:
-                  'Programmes de bourses pour soutenir vos études en ingénierie',
+                link: 'https://www.ingenieuses.fr/actualites/',
               },
             ].map((feature, index) => (
               <motion.div
@@ -118,15 +115,17 @@ const Home = () => {
                 animate={inView ? 'visible' : 'hidden'}
                 variants={fadeIn}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
-                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow text-center"
               >
-                <div className="flex flex-col items-center text-center">
-                  <div className="mb-4">{feature.icon}</div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600">{feature.description}</p>
-                </div>
+                <div className="mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
+                <Link
+                  to={feature.link}
+                  className="text-[#ed0f4e] hover:underline mt-4 inline-block"
+                >
+                  Suite
+                </Link>
               </motion.div>
             ))}
           </div>

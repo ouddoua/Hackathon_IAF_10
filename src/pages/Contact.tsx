@@ -137,15 +137,15 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-[#ed0f4e]" />
                   <div>
                     <p className="font-medium">Téléphone</p>
-                    <p className="text-gray-600">+33 (0)1 23 45 67 89</p>
+                    <p className="text-gray-600">+33 (0)1 85 65 25 25</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
                   <MapPin className="h-6 w-6 text-[#ed0f4e]" />
                   <div>
                     <p className="font-medium">Adresse</p>
-                    <p className="text-gray-600">123 Avenue de l'Innovation</p>
-                    <p className="text-gray-600">75001 Paris, France</p>
+                    <p className="text-gray-600">Annecy le vieux,polytech_Annecy_chambéry</p>
+                    <p className="text-gray-600"> 74940 Annecy, France</p>
                   </div>
                 </div>
               </div>
