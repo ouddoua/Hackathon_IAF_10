@@ -83,13 +83,7 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Link
-              to="/join"
-              className="block px-3 py-2 rounded-md text-base font-medium text-white bg-[#ed0f4e] hover:bg-[#ed0f4e]"
-              onClick={() => setIsOpen(false)}
-            >
-              Rejoignez-nous
-            </Link>
+            
           </div>
         </div>
       )}
