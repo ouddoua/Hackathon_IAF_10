@@ -103,7 +103,7 @@ const Contact = () => {
                   <div>
                     <p className="font-medium">Adresse</p>
                     <p className="text-gray-600">123 Avenue de l'Innovation</p>
-                    <p className="text-gray-600">75001 Paris, France</p>
+                    <p className="text-gray-600">75001 Annecy, France</p>
                   </div>
                 </div>
               </div>
