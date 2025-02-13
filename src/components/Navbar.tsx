@@ -50,12 +50,7 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Link
-              to="/join"
-              className="ml-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-[#ed0f4e] hover:bg-[#ed0f4e] transition-colors"
-            >
-              Rejoignez-nous
-            </Link>
+            
           </div>
 
           {/* Mobile menu button */}
