@@ -9,7 +9,7 @@ const About = () => {
   });
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50">
       {/* Mission Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,7 +28,7 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section ref={ref} className="py-20 bg-gray-50">
+      <section ref={ref} className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -50,9 +50,9 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
-                className="bg-white p-8 rounded-lg shadow-lg"
+                className="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow"
               >
-                <h3 className="text-2xl font-semibold text-purple-600 mb-4">{value.title}</h3>
+                <h3 className="text-2xl font-semibold text-[#ed0f4e] mb-4">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
               </motion.div>
             ))}

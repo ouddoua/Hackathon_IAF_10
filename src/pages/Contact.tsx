@@ -34,7 +34,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ed0f4e]"
                   />
                 </div>
                 <div>
@@ -43,7 +43,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
-                    className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ed0f4e]"
                   />
                 </div>
                 <div>
@@ -52,7 +52,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ed0f4e]"
                   />
                 </div>
                 <div>
@@ -61,12 +61,12 @@ const Contact = () => {
                   </label>
                   <textarea
                     rows={4}
-                    className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ed0f4e]"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors"
+                  className="w-full px-6 py-3 bg-[#ed0f4e] text-white rounded-md hover:bg-[#d10944] transition-colors"
                 >
                   Envoyer le message
                 </button>
@@ -85,25 +85,25 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold mb-6">Informations de contact</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
-                  <Mail className="h-6 w-6 text-purple-600" />
+                  <Mail className="h-6 w-6 text-[#ed0f4e]" />
                   <div>
                     <p className="font-medium">Email</p>
                     <p className="text-gray-600">contact@ingenieure-au-feminin.fr</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <Phone className="h-6 w-6 text-purple-600" />
+                  <Phone className="h-6 w-6 text-[#ed0f4e]" />
                   <div>
                     <p className="font-medium">Téléphone</p>
                     <p className="text-gray-600">+33 (0)1 23 45 67 89</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <MapPin className="h-6 w-6 text-purple-600" />
+                  <MapPin className="h-6 w-6 text-[#ed0f4e]" />
                   <div>
                     <p className="font-medium">Adresse</p>
                     <p className="text-gray-600">123 Avenue de l'Innovation</p>
-                    <p className="text-gray-600">75001 Paris, France</p>
+                    <p className="text-gray-600">74940 Annecy, France</p>
                   </div>
                 </div>
               </div>

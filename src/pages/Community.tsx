@@ -25,7 +25,7 @@ const Community = () => {
             transition={{ duration: 0.8 }}
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
-            <MessageCircle className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+            <MessageCircle className="h-12 w-12 text-[#ed0f4e] mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-4">Forum de Discussion</h3>
             <p className="text-gray-600">
               Échangez avec d'autres membres sur des sujets professionnels et techniques.
@@ -38,7 +38,7 @@ const Community = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
-            <Users className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+            <Users className="h-12 w-12 text-[#ed0f4e] mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-4">Groupes Thématiques</h3>
             <p className="text-gray-600">
               Rejoignez des groupes spécialisés selon vos intérêts et votre domaine.
@@ -51,7 +51,7 @@ const Community = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
-            <Mail className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+            <Mail className="h-12 w-12 text-[#ed0f4e] mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-4">Newsletter</h3>
             <p className="text-gray-600">
               Restez informée des dernières actualités et opportunités.
@@ -66,7 +66,7 @@ const Community = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="max-w-2xl mx-auto"
         >
-          <div className="bg-purple-50 p-8 rounded-lg">
+          <div className="bg-[#fce4e9] p-8 rounded-lg">
             <h3 className="text-2xl font-semibold text-center mb-6">
               Inscrivez-vous à notre newsletter
             </h3>
@@ -74,11 +74,11 @@ const Community = () => {
               <input
                 type="email"
                 placeholder="Votre adresse email"
-                className="flex-grow px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="flex-grow px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ed0f4e]"
               />
               <button
                 type="submit"
-                className="px-6 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors"
+                className="px-6 py-2 bg-[#ed0f4e] text-white rounded-md hover:bg-[#d10944] transition-colors"
               >
                 S'inscrire
               </button>

@@ -4,14 +4,14 @@ import { GraduationCap, Mail, Phone, MapPin, Linkedin, Twitter, Instagram } from
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2">
-              <GraduationCap className="h-8 w-8 text-purple-400" />
-              <span className="font-bold text-xl">Ingénieur·e Au Féminin</span>
+              <GraduationCap className="h-8 w-8 text-[#ed0f4e]" />
+              <span className="font-bold text-xl text-[#ed0f4e]">Ingénieur·e Au Féminin</span>
             </div>
             <p className="mt-4 text-gray-400">
               Encourager, Inspirer, Soutenir les Femmes Ingénieures. Ensemble, construisons un avenir plus inclusif dans l'ingénierie.
@@ -20,25 +20,25 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Liens Rapides</h3>
+            <h3 className="font-semibold text-lg mb-4 text-[#ed0f4e]">Liens Rapides</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/about" className="text-gray-400 hover:text-purple-400 transition-colors">
+                <Link to="/about" className="text-gray-400 hover:text-[#ed0f4e] transition-colors">
                   À Propos
                 </Link>
               </li>
               <li>
-                <Link to="/programs" className="text-gray-400 hover:text-purple-400 transition-colors">
+                <Link to="/programs" className="text-gray-400 hover:text-[#ed0f4e] transition-colors">
                   Programmes
                 </Link>
               </li>
               <li>
-                <Link to="/resources" className="text-gray-400 hover:text-purple-400 transition-colors">
+                <Link to="/resources" className="text-gray-400 hover:text-[#ed0f4e] transition-colors">
                   Ressources
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="text-gray-400 hover:text-purple-400 transition-colors">
+                <Link to="/blog" className="text-gray-400 hover:text-[#ed0f4e] transition-colors">
                   Blog
                 </Link>
               </li>
@@ -47,40 +47,40 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Contact</h3>
+            <h3 className="font-semibold text-lg mb-4 text-[#ed0f4e]">Contact</h3>
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
-                <Mail className="h-5 w-5 text-purple-400" />
-                <a href="mailto:contact@ingenieure-au-feminin.fr" className="text-gray-400 hover:text-purple-400 transition-colors">
+                <Mail className="h-5 w-5 text-[#ed0f4e]" />
+                <a href="mailto:contact@ingenieure-au-feminin.fr" className="text-gray-400 hover:text-[#ed0f4e] transition-colors">
                   contact@ingenieure-au-feminin.fr
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <Phone className="h-5 w-5 text-purple-400" />
+                <Phone className="h-5 w-5 text-[#ed0f4e]" />
                 <span className="text-gray-400">+33 (0)1 23 45 67 89</span>
               </li>
               <li className="flex items-center space-x-2">
-                <MapPin className="h-5 w-5 text-purple-400" />
+                <MapPin className="h-5 w-5 text-[#ed0f4e]" />
                 <span className="text-gray-400">Paris, France</span>
               </li>
             </ul>
 
             {/* Social Media */}
             <div className="mt-4 flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-[#ed0f4e] transition-colors">
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-[#ed0f4e] transition-colors">
                 <Twitter className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-[#ed0f4e] transition-colors">
                 <Instagram className="h-6 w-6" />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-800">
+        <div className="mt-8 pt-8 border-t border-gray-700">
           <div className="text-center text-gray-400">
             <p>&copy; {new Date().getFullYear()} Ingénieur·e Au Féminin. Tous droits réservés.</p>
           </div>
