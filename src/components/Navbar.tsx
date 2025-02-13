@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <GraduationCap className="h-8 w-8 text-purple-600" />
+              <GraduationCap className="h-8 w-8 text-[#ed0f4e]" />
               <span className="font-bold text-xl text-gray-900">Ingénieur·e Au Féminin</span>
             </Link>
           </div>
@@ -37,8 +37,8 @@ const Navbar = () => {
                 to={item.href}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   isActive(item.href)
-                    ? 'bg-purple-100 text-purple-700'
-                    : 'text-gray-700 hover:bg-purple-50 hover:text-purple-600'
+                    ? 'bg-[#edd4db] text-[#ed0f4e]'
+                    : 'text-gray-700 hover:bg-purple-50 hover:text-[#ed0f4e]'
                 }`}
               >
                 {item.name}
@@ -46,7 +46,7 @@ const Navbar = () => {
             ))}
             <Link
               to="/join"
-              className="ml-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 transition-colors"
+              className="ml-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-[#ed0f4e] hover:bg-[#ed0f4e] transition-colors"
             >
               Rejoignez-nous
             </Link>
@@ -56,7 +56,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-purple-600 hover:bg-purple-50 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-[#ed0f4e] hover:bg-purple-50 focus:outline-none"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -74,8 +74,8 @@ const Navbar = () => {
                 to={item.href}
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
                   isActive(item.href)
-                    ? 'bg-purple-100 text-purple-700'
-                    : 'text-gray-700 hover:bg-purple-50 hover:text-purple-600'
+                    ? 'bg-[#edd4db] text-[#ed0f4e]'
+                    : 'text-gray-700 hover:bg-purple-50 hover:text-[#ed0f4e]'
                 }`}
                 onClick={() => setIsOpen(false)}
               >
@@ -84,7 +84,7 @@ const Navbar = () => {
             ))}
             <Link
               to="/join"
-              className="block px-3 py-2 rounded-md text-base font-medium text-white bg-purple-600 hover:bg-purple-700"
+              className="block px-3 py-2 rounded-md text-base font-medium text-white bg-[#ed0f4e] hover:bg-[#ed0f4e]"
               onClick={() => setIsOpen(false)}
             >
               Rejoignez-nous

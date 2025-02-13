@@ -22,9 +22,9 @@ const Programs = () => {
           {[
             
             {
-              title: 'Journée de découverte des métiers de la recherche (21 janvier 2025) ',
-              description: 'Une trentaine de lycéennes du lycée Gaspard Monge de Chambéry ont exploré le monde de la recherche au sein du Laboratoire procédés énergie bâtiment (LOCIE). Elles ont rencontré des femmes scientifiques aux parcours inspirants et découvert diverses thématiques scientifiques.',
-              image: 'https://www.univ-smb.fr/polytech/wp-content/uploads/sites/110/2025/02/ingenieure-feminin-visite-locie.jpg',
+              title: 'Lancement de l’opération Ingénieuses 2025',
+              description: 'Bénéficiez de l\'expérience de mentors expérimentés pour développer votre carrière.',
+              image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
             },
             {
               title: 'Table ronde sur les métiers d’ingénieur·e dans la construction et l’industrie (15 février 2024)',

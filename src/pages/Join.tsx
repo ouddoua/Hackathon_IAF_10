@@ -12,7 +12,7 @@ const Join = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Rejoignez-nous</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#ed0f4e] mb-6">Rejoignez-nous</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Devenez membre de notre communauté et participez à la construction d'un avenir plus inclusif dans l'ingénierie.
           </p>
@@ -26,8 +26,8 @@ const Join = () => {
             transition={{ duration: 0.8 }}
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
-            <Users className="h-12 w-12 text-purple-600 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Réseau Professionnel</h3>
+            <Users className="h-12 w-12 text-[#ed0f4e] mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2 text-[#ed0f4e]">Réseau Professionnel</h3>
             <p className="text-gray-600">Accédez à un réseau de professionnelles inspirantes</p>
           </motion.div>
 
@@ -37,8 +37,8 @@ const Join = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
-            <Gift className="h-12 w-12 text-purple-600 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Avantages Exclusifs</h3>
+            <Gift className="h-12 w-12 text-[#ed0f4e] mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2 text-[#ed0f4e]">Avantages Exclusifs</h3>
             <p className="text-gray-600">Bénéficiez d'événements et ressources exclusifs</p>
           </motion.div>
 
@@ -48,8 +48,8 @@ const Join = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
-            <Heart className="h-12 w-12 text-purple-600 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Impact Social</h3>
+            <Heart className="h-12 w-12 text-[#ed0f4e] mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2 text-[#ed0f4e]">Impact Social</h3>
             <p className="text-gray-600">Contribuez à inspirer la prochaine génération</p>
           </motion.div>
         </div>
@@ -62,7 +62,7 @@ const Join = () => {
           className="max-w-2xl mx-auto"
         >
           <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold text-center mb-6">Formulaire d'Adhésion</h3>
+            <h3 className="text-2xl font-semibold text-center mb-6 text-[#ed0f4e]">Formulaire d'Adhésion</h3>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -72,7 +72,7 @@ const Join = () => {
                   <input
                     type="text"
                     id="firstName"
-                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ed0f4e]"
                   />
                 </div>
                 <div>
@@ -82,7 +82,7 @@ const Join = () => {
                   <input
                     type="text"
                     id="lastName"
-                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ed0f4e]"
                   />
                 </div>
               </div>
@@ -93,7 +93,7 @@ const Join = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ed0f4e]"
                 />
               </div>
               <div>
@@ -103,7 +103,7 @@ const Join = () => {
                 <input
                   type="text"
                   id="profession"
-                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ed0f4e]"
                 />
               </div>
               <div>
@@ -113,12 +113,12 @@ const Join = () => {
                 <textarea
                   id="motivation"
                   rows={4}
-                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ed0f4e]"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+                className="w-full px-6 py-3 bg-[#ed0f4e] text-white rounded-lg hover:bg-[#e00442] transition-colors"
               >
                 Soumettre ma candidature
               </button>
