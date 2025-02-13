@@ -7,7 +7,7 @@ const API_URL = `https://api.allorigins.win/get?url=${encodeURIComponent(
   "https://api.apify.com/v2/datasets/fg1JFeB4D2sQxoXGE/items?token=apify_api_KN3ammcdvlHKzdig0RiVBorSTsRlJl3PqrOy"
 )}`;
 
-const Resources = () => {
+const News = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -129,4 +129,4 @@ const styles = {
   },
 };
 
-export default Resources;
+export default News;

@@ -5,9 +5,8 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Programs from './pages/Programs';
-import Resources from './pages/Resources';
+import News from './pages/News';
 import Community from './pages/Community';
-
 import Contact from './pages/Contact';
 
 
@@ -20,9 +19,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/programs" element={<Programs />} />
-          <Route path="/resources" element={<Resources />} />
+          <Route path="/News" element={<News />} />
           <Route path="/community" element={<Community />} />
-          
           <Route path="/contact" element={<Contact />} />
           
         </Routes>
