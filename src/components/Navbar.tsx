@@ -12,7 +12,7 @@ const Navbar = () => {
     { name: 'Programmes', href: '/programs' },
     { name: 'Ressources', href: '/resources' },
     { name: 'Communauté', href: '/community' },
-    { name: 'Blog', href: '/blog' },
+    { name: 'news', href: '/news' },
     { name: 'Contact', href: '/contact' },
   ];
 
