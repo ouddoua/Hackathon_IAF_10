@@ -11,9 +11,8 @@ const Navbar = () => {
     { name: 'Accueil', href: '/' },
     { name: 'À Propos', href: '/about' },
     { name: 'Programmes', href: '/programs' },
-    { name: 'Ressources', href: '/resources' },
     { name: 'Communauté', href: '/community' },
-    { name: 'news', href: '/news' },
+    { name: 'News', href: '/news' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -50,12 +49,7 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Link
-              to="/join"
-              className="ml-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-[#ed0f4e] hover:bg-[#ed0f4e] transition-colors"
-            >
-              Rejoignez-nous
-            </Link>
+            
           </div>
 
           {/* Mobile menu button */}
@@ -88,13 +82,7 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Link
-              to="/join"
-              className="block px-3 py-2 rounded-md text-base font-medium text-white bg-[#ed0f4e] hover:bg-[#ed0f4e]"
-              onClick={() => setIsOpen(false)}
-            >
-              Rejoignez-nous
-            </Link>
+            
           </div>
         </div>
       )}

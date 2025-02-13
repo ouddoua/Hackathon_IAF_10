@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GraduationCap, Mail, Phone, MapPin, Linkedin, Twitter, Instagram } from 'lucide-react';
+import { GraduationCap, Mail, Phone, MapPin, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -38,9 +38,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="text-gray-400 hover:text-[#ed0f4e] transition-colors">
-                  Blog
-                </Link>
+                
               </li>
             </ul>
           </div>
@@ -61,19 +59,16 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-5 w-5 text-[#ed0f4e]" />
-                <span className="text-gray-400">Paris, France</span>
+                <span className="text-gray-400">Annecy, France</span>
               </li>
             </ul>
 
             {/* Social Media */}
             <div className="mt-4 flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-[#ed0f4e] transition-colors">
+              <a href="https://www.linkedin.com/company/ing%C3%A9nieur-e-au-f%C3%A9minin?trk=public_post-text" className="text-gray-400 hover:text-[#ed0f4e] transition-colors">
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#ed0f4e] transition-colors">
-                <Twitter className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-[#ed0f4e] transition-colors">
+              <a href="https://www.instagram.com/iaf_7374/" className="text-gray-400 hover:text-[#ed0f4e] transition-colors">
                 <Instagram className="h-6 w-6" />
               </a>
             </div>

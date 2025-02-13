@@ -13,14 +13,10 @@ import listicLogo from '../Logos/Logo_LISTIC.jpg';
 import ntnLogo from '../Logos/Logo_NTN.png';
 import creditAgricoleLogo from '../Logos/Logo_Credit_Agricol_Technologies_Services.jpg';
 import sopraSteriaLogo from '../Logos/Logo_Sopra_Steria.png';
-import IAFlogo from '../Logos/Logo_IAF.png'
 
 const Community = () => {
   return (
-    <div
-      className="min-h-screen bg-white py-20"
-      
-    >
+    <div className="min-h-screen bg-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,7 +38,9 @@ const Community = () => {
             transition={{ duration: 0.8 }}
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
-            <img src={cvecLogo} alt="CVEC Logo" className="h-24 w-24 mx-auto mb-4" />
+            <a href="https://cvec.etudiant.gouv.fr/" target="_blank" rel="noopener noreferrer">
+              <img src={cvecLogo} alt="CVEC Logo" className="h-24 w-24 mx-auto mb-4" />
+            </a>
             <h3 className="text-xl font-semibold mb-4">CVEC</h3>
             <p className="text-gray-600">
               Échangez avec d'autres membres sur des sujets professionnels et techniques.
@@ -56,7 +54,9 @@ const Community = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
-            <img src={listicLogo} alt="LISTIC Logo" className="h-24 w-24 mx-auto mb-4" />
+            <a href="https://www.univ-smb.fr/listic/" target="_blank" rel="noopener noreferrer">
+              <img src={listicLogo} alt="LISTIC Logo" className="h-24 w-24 mx-auto mb-4" />
+            </a>
             <h3 className="text-xl font-semibold mb-4">LISTIC</h3>
             <p className="text-gray-600">
               Rejoignez des groupes spécialisés selon vos intérêts et votre domaine.
@@ -70,7 +70,9 @@ const Community = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
-            <img src={ntnLogo} alt="NTN Logo" className="h-24 w-24 mx-auto mb-4" />
+            <a href="https://eshop.ntn-snr.com/fr/" target="_blank" rel="noopener noreferrer">
+              <img src={ntnLogo} alt="NTN Logo" className="h-24 w-24 mx-auto mb-4" />
+            </a>
             <h3 className="text-xl font-semibold mb-4">NTN</h3>
             <p className="text-gray-600">
               Restez informée des dernières actualités et opportunités.
@@ -84,7 +86,9 @@ const Community = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
-            <img src={creditAgricoleLogo} alt="Credit Agricole Logo" className="h-24 w-24 mx-auto mb-4" />
+            <a href="https://www.credit-agricole.fr/" target="_blank" rel="noopener noreferrer">
+              <img src={creditAgricoleLogo} alt="Credit Agricole Logo" className="h-24 w-24 mx-auto mb-4" />
+            </a>
             <h3 className="text-xl font-semibold mb-4">Credit Agricole</h3>
             <p className="text-gray-600">
               Engagez-vous dans un réseau d'étudiants et de professeurs pour partager vos connaissances.
@@ -98,7 +102,9 @@ const Community = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="bg-white p-8 rounded-lg shadow-lg text-center"
           >
-            <img src={sopraSteriaLogo} alt="Sopra Steria Logo" className="h-24 w-24 mx-auto mb-4" />
+            <a href="https://www.soprasteria.com/fr" target="_blank" rel="noopener noreferrer">
+              <img src={sopraSteriaLogo} alt="Sopra Steria Logo" className="h-24 w-24 mx-auto mb-4" />
+            </a>
             <h3 className="text-xl font-semibold mb-4">Sopra Steria</h3>
             <p className="text-gray-600">
               Collaborez avec des entreprises qui soutiennent notre communauté.

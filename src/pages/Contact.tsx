@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
 import emailjs from "emailjs-com";
+import ReCAPTCHA from "react-google-recaptcha";  // Importer le composant ReCAPTCHA
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,16 +13,28 @@ const Contact = () => {
   });
 
   const [status, setStatus] = useState("");
+  const [captchaValue, setCaptchaValue] = useState(null); // Valeur reCAPTCHA
 
   // Handle input changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // Handle captcha change
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value);
+  };
+
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
+    // Si reCAPTCHA n'est pas rempli, arrêter l'envoi
+    if (!captchaValue) {
+      setStatus("Veuillez valider le reCAPTCHA.");
+      return;
+    }
+
     const serviceId = "service_qxor36r";
     const templateId = "template_xm7nx1a";
     const userId = "wZbWvuB2Mfw1ntilP";
@@ -39,12 +52,12 @@ const Contact = () => {
       await emailjs.send(serviceId, templateId, templateParams, userId);
       setStatus("Message envoyé avec succès !");
       setFormData({ name: "", email: "", subject: "", message: "" });
+      setCaptchaValue(null);  // Réinitialiser le captcha
     } catch (error) {
       console.error("Erreur d'envoi :", error);
       setStatus("Erreur lors de l'envoi du message.");
     }
   };
-  
 
   return (
     <div className="min-h-screen bg-white py-20">
@@ -113,6 +126,15 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
+
+                {/* reCAPTCHA */}
+                <div className="mt-4">
+                  <ReCAPTCHA
+                    sitekey="6LdLMdYqAAAAAEbKw3T6phlZuwm4nY5ZCrHsJ7Vf"  // Remplacez par votre propre clé de site
+                    onChange={handleCaptchaChange}
+                  />
+                </div>
+
                 <button type="submit" className="w-full px-6 py-3 bg-[#ed0f4e] text-white rounded-md hover:bg-[#d10944] transition-colors">
                   Envoyer le message
                 </button>

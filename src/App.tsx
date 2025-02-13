@@ -5,11 +5,10 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Programs from './pages/Programs';
-import Resources from './pages/Resources';
-import Community from './pages/Community';
-import Join from './pages/Join';
-import Contact from './pages/Contact';
 import News from './pages/News';
+import Community from './pages/Community';
+import Contact from './pages/Contact';
+
 
 function App() {
   return (
@@ -20,11 +19,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/programs" element={<Programs />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/community" element={<Community />} />
-          <Route path="/join" element={<Join />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/News" element={<News />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/contact" element={<Contact />} />
+          
         </Routes>
       </main>
       <Footer />
