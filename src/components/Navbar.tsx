@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, GraduationCap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import Logo from '../Logos/Logo_IAF-removebg-preview.png';  
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,8 +24,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
+            {/* Logo personnalisé */}
             <Link to="/" className="flex items-center space-x-2">
-              <GraduationCap className="h-8 w-8 text-[#ed0f4e]" />
+              <img 
+                src={Logo}  
+                alt="Logo Ingénieur·e Au Féminin"
+                className="h-8 w-8"  
+              />
               <span className="font-bold text-xl text-gray-900">Ingénieur·e Au Féminin</span>
             </Link>
           </div>

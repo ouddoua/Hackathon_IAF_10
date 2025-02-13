@@ -67,39 +67,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Navbar Section with White Background */}
-      <section className="bg-white py-4 shadow-md">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-6">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-          >
-            <img src="https://via.placeholder.com/150" alt="Logo" className="h-10" />
-          </motion.div>
-          <div className="flex space-x-6">
-            <Link
-              to="/about"
-              className="text-[#ed0f4e] hover:text-[#d10944] transition-colors"
-            >
-              À propos
-            </Link>
-            <Link
-              to="/services"
-              className="text-[#ed0f4e] hover:text-[#d10944] transition-colors"
-            >
-              Services
-            </Link>
-            <Link
-              to="/contact"
-              className="text-[#ed0f4e] hover:text-[#d10944] transition-colors"
-            >
-              Contact
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Features Section */}
       <section ref={ref} className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
