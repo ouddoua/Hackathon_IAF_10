@@ -4,7 +4,7 @@ import { BookOpen, FileText, Link as LinkIcon } from 'lucide-react';
 
 const Resources = () => {
   return (
-    <div className="min-h-screen bg-white py-20">
+    <div className="min-h-screen bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,16 +23,16 @@ const Resources = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="bg-white p-6 rounded-lg shadow-lg"
+            className="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow"
           >
             <div className="flex items-center mb-4">
-              <BookOpen className="h-6 w-6 text-purple-600 mr-2" />
-              <h2 className="text-xl font-semibold">Guides Pratiques</h2>
+              <BookOpen className="h-8 w-8 text-[#ed0f4e] mr-2" />
+              <h2 className="text-xl font-semibold text-gray-900">Guides Pratiques</h2>
             </div>
             <ul className="space-y-2">
-              <li className="text-gray-600">Guide du CV parfait</li>
-              <li className="text-gray-600">Préparer son entretien</li>
-              <li className="text-gray-600">Négocier son salaire</li>
+              <li className="text-gray-600 hover:text-[#ed0f4e] transition-colors">Guide du CV parfait</li>
+              <li className="text-gray-600 hover:text-[#ed0f4e] transition-colors">Préparer son entretien</li>
+              <li className="text-gray-600 hover:text-[#ed0f4e] transition-colors">Négocier son salaire</li>
             </ul>
           </motion.div>
 
@@ -40,16 +40,16 @@ const Resources = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white p-6 rounded-lg shadow-lg"
+            className="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow"
           >
             <div className="flex items-center mb-4">
-              <FileText className="h-6 w-6 text-purple-600 mr-2" />
-              <h2 className="text-xl font-semibold">Articles</h2>
+              <FileText className="h-8 w-8 text-[#ed0f4e] mr-2" />
+              <h2 className="text-xl font-semibold text-gray-900">Articles</h2>
             </div>
             <ul className="space-y-2">
-              <li className="text-gray-600">Tendances en ingénierie</li>
-              <li className="text-gray-600">Témoignages inspirants</li>
-              <li className="text-gray-600">Conseils carrière</li>
+              <li className="text-gray-600 hover:text-[#ed0f4e] transition-colors">Tendances en ingénierie</li>
+              <li className="text-gray-600 hover:text-[#ed0f4e] transition-colors">Témoignages inspirants</li>
+              <li className="text-gray-600 hover:text-[#ed0f4e] transition-colors">Conseils carrière</li>
             </ul>
           </motion.div>
 
@@ -57,16 +57,16 @@ const Resources = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="bg-white p-6 rounded-lg shadow-lg"
+            className="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow"
           >
             <div className="flex items-center mb-4">
-              <LinkIcon className="h-6 w-6 text-purple-600 mr-2" />
-              <h2 className="text-xl font-semibold">Liens Utiles</h2>
+              <LinkIcon className="h-8 w-8 text-[#ed0f4e] mr-2" />
+              <h2 className="text-xl font-semibold text-gray-900">Liens Utiles</h2>
             </div>
             <ul className="space-y-2">
-              <li className="text-gray-600">Associations partenaires</li>
-              <li className="text-gray-600">Opportunités de stage</li>
-              <li className="text-gray-600">Formations en ligne</li>
+              <li className="text-gray-600 hover:text-[#ed0f4e] transition-colors">Associations partenaires</li>
+              <li className="text-gray-600 hover:text-[#ed0f4e] transition-colors">Opportunités de stage</li>
+              <li className="text-gray-600 hover:text-[#ed0f4e] transition-colors">Formations en ligne</li>
             </ul>
           </motion.div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 
-const Blog= () => {
+const News = () => {
   const blogPosts = [
     {
       title: "L'importance de la diversité dans l'ingénierie",
@@ -88,4 +88,4 @@ const Blog= () => {
   );
 };
 
-export default Blog;
+export default News;

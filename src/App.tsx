@@ -9,7 +9,7 @@ import Resources from './pages/Resources';
 import Community from './pages/Community';
 import Join from './pages/Join';
 import Contact from './pages/Contact';
-import Blog from './pages/Blog';
+import News from './pages/News';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Route path="/community" element={<Community />} />
           <Route path="/join" element={<Join />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/News" element={<News />} />
         </Routes>
       </main>
       <Footer />

@@ -18,9 +18,9 @@ const Home = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center bg-gradient-to-r from-purple-900 via-purple-800 to-purple-900 text-white">
+      <section className="relative h-[80vh] flex items-center justify-center bg-white text-white">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
             backgroundImage:
               'url(https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)',
@@ -31,7 +31,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold mb-6"
+            className="text-4xl md:text-6xl font-bold mb-6 text-[#ed0f4e]"
           >
             Encourager, Inspirer, Soutenir <br />
             les Femmes Ingénieures
@@ -40,7 +40,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl md:text-2xl mb-8 text-purple-100"
+            className="text-xl md:text-2xl mb-8 text-[#ed0f4e]"
           >
             Ensemble, construisons un avenir plus inclusif dans l'ingénierie
           </motion.p>
@@ -52,18 +52,51 @@ const Home = () => {
           >
             <Link
               to="/join"
-              className="inline-flex items-center px-8 py-3 bg-white text-purple-900 rounded-full font-semibold hover:bg-purple-100 transition-colors"
+              className="inline-flex items-center px-8 py-3 bg-white text-[#ed0f4e] rounded-full font-semibold hover:bg-[#d10944] transition-colors"
             >
               Rejoignez-nous
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               to="/programs"
-              className="inline-flex items-center px-8 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-purple-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border-2 border-[#ed0f4e] text-[#ed0f4e] rounded-full font-semibold hover:bg-[#ed0f4e] hover:text-white transition-colors"
             >
               Découvrir nos programmes
             </Link>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Navbar Section with White Background */}
+      <section className="bg-white py-4 shadow-md">
+        <div className="max-w-7xl mx-auto flex justify-between items-center px-6">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
+            <img src="https://via.placeholder.com/150" alt="Logo" className="h-10" />
+          </motion.div>
+          <div className="flex space-x-6">
+            <Link
+              to="/about"
+              className="text-[#ed0f4e] hover:text-[#d10944] transition-colors"
+            >
+              À propos
+            </Link>
+            <Link
+              to="/services"
+              className="text-[#ed0f4e] hover:text-[#d10944] transition-colors"
+            >
+              Services
+            </Link>
+            <Link
+              to="/contact"
+              className="text-[#ed0f4e] hover:text-[#d10944] transition-colors"
+            >
+              Contact
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -88,25 +121,25 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                icon: <Users className="h-8 w-8 text-purple-600" />,
+                icon: <Users className="h-8 w-8 text-[#ed0f4e]" />,
                 title: 'Mentorat',
                 description:
                   'Programme de mentorat personnalisé pour accompagner les futures ingénieures',
               },
               {
-                icon: <BookOpen className="h-8 w-8 text-purple-600" />,
+                icon: <BookOpen className="h-8 w-8 text-[#ed0f4e]" />,
                 title: 'Formations',
                 description:
                   'Ateliers et formations pour développer vos compétences techniques',
               },
               {
-                icon: <Calendar className="h-8 w-8 text-purple-600" />,
+                icon: <Calendar className="h-8 w-8 text-[#ed0f4e]" />,
                 title: 'Événements',
                 description:
                   'Conférences et networking pour élargir votre réseau professionnel',
               },
               {
-                icon: <Award className="h-8 w-8 text-purple-600" />,
+                icon: <Award className="h-8 w-8 text-[#ed0f4e]" />,
                 title: 'Bourses',
                 description:
                   'Programmes de bourses pour soutenir vos études en ingénierie',
