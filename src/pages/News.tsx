@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, User, ArrowRight } from 'lucide-react';
-import iness from '../Logos/INES.PNG'
+import iness from '../Logos/INES.png'
 import iness1 from '../Logos/ines1.png'
 import iness2 from '../Logos/ines2.jpeg'
 import { link } from 'framer-motion/client';
