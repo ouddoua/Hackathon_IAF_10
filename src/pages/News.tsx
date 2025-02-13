@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 
-const Blog = () => {
+const News = () => {
   const blogPosts = [
     {
       title: "L'importance de la diversité dans l'ingénierie",
@@ -36,7 +36,7 @@ const Blog = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Blog</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">News</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Découvrez nos derniers articles sur l'ingénierie, la diversité et l'innovation.
           </p>
@@ -88,4 +88,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default News;
