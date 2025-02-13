@@ -51,13 +51,6 @@ const Home = () => {
             className="flex flex-col sm:flex-row justify-center gap-4"
           >
             <Link
-              to="/join"
-              className="inline-flex items-center px-8 py-3 bg-white text-[#ed0f4e] rounded-full font-semibold hover:bg-[#d10944] transition-colors"
-            >
-              Rejoignez-nous
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-            <Link
               to="/programs"
               className="inline-flex items-center px-8 py-3 border-2 border-[#ed0f4e] text-[#ed0f4e] rounded-full font-semibold hover:bg-[#ed0f4e] hover:text-white transition-colors"
             >
