@@ -1,29 +1,37 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, User, ArrowRight } from 'lucide-react';
+import iness from '../Logos/INES.PNG'
+import iness1 from '../Logos/ines1.png'
+import iness2 from '../Logos/ines2.jpeg'
+import { link } from 'framer-motion/client';
+
 
 const News = () => {
   const blogPosts = [
     {
-      title: "L'importance de la diversité dans l'ingénierie",
-      excerpt: "Découvrez pourquoi la diversité est cruciale pour l'innovation et le progrès dans le domaine de l'ingénierie.",
-      author: "Marie Dubois",
-      date: "15 Mars 2024",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+      title: "VISITE DE L'INES",
+      excerpt: "Retour en images sur la visite de l’Institut National de l’Energie Solaire (INES) organisée par Ingénieur.e Au Féminin pour les élèves du lycée Gaspard Monge",
+      
+      date: "12 Février 2025",
+      image: iness,
+      link : "https://www.instagram.com/iaf_7374/reel/DF-hVTUqdkh/"
     },
     {
-      title: "Les femmes qui ont révolutionné l'ingénierie",
-      excerpt: "Un regard sur les pionnières qui ont marqué l'histoire de l'ingénierie et continuent d'inspirer les générations futures.",
-      author: "Sophie Martin",
-      date: "10 Mars 2024",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      title: "Ciné-Débat",
+      excerpt: "Soirée Décontrac’t financée par la CVEC et organisée par le Service Vie Etudiante et IAF Diffusion du film Une Femme d’Exception suivie d’un débat libre autour de la place des femmes dans des métiers d’hommes et l’égalité des genres.",
+      
+      date: "18 Février 2025",
+      image: iness1,
+      link : "https://www.instagram.com/iaf_7374/p/DF708gxqM4U/"
     },
     {
-      title: "Comment réussir dans l'ingénierie en 2024",
-      excerpt: "Les compétences essentielles et les tendances à suivre pour une carrière réussie en ingénierie.",
-      author: "Claire Bernard",
-      date: "5 Mars 2024",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+      title: "Exposition",
+      excerpt: "Dans le cadre de la semaine Plus d'Égalité, IAF expose dans le hall de Polytech les portraits de femmes dont les recherches scientifiques ont été volées ou oubliées par l’Histoire.",
+      
+      date: "25 Février 2025",
+      image: iness2,
+      link : "https://www.instagram.com/iaf_7374/p/DF0e5H1q9ug/"
     },
   ];
 
@@ -38,7 +46,7 @@ const News = () => {
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">News</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Découvrez nos derniers articles sur l'ingénierie, la diversité et l'innovation.
+            Découvrez nos derniers  posts mis sur nos réseaux sociaux. 
           </p>
         </motion.div>
 
@@ -75,10 +83,15 @@ const News = () => {
                 <p className="text-gray-600 mb-4">
                   {post.excerpt}
                 </p>
-                <button className="inline-flex items-center text-purple-600 hover:text-purple-700 transition-colors">
-                  Lire la suite
-                  <ArrowRight className="h-4 w-4 ml-2" />
-                </button>
+                <a 
+                  href={post.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-purple-600 hover:text-purple-700 transition-colors"
+                >
+                 Lire la suite
+                 <ArrowRight className="h-4 w-4 ml-2" />
+               </a>
               </div>
             </motion.article>
           ))}
